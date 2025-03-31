@@ -1,11 +1,14 @@
 // Error 1:
-let message = 'Welcome to the debugging exercise!';
-console.log(mesage); 
+function message(){
+let message = ('Welcome to the debugging exercise!');
+console.log(message);
+} 
 
-// Error 2: 
-let button = document.querySelector('.actionButton'); 
-button.addEventListener('click', eventHandler); 
-
+// Error 2:
+ function button(){
+let button = document.querySelector('.actionButton');
+action.addEventListener('click', eventHandler); 
+ }
 // Error 3: 
 function eventHandler() {
   console.log('Button clicked');
@@ -21,10 +24,10 @@ function displayOutput() {
 // Error 6: Misusing variable scope
 function updateMessage() {
   let localMessage = 'Updated message';
-}
+
 updateMessage();
 console.log(localMessage); 
-
+}
 // Error 7:
 document.getElementById('testButton').addEventListener('click', testFunction());
 
@@ -51,7 +54,7 @@ let importantData =
 console.log('importantData');
 
 // Error 12: 
-tryToCallFunction();
+tryToCallFunction() 
 
 // Error 13:
 let user = { namee: 'Alice' };
@@ -62,12 +65,12 @@ let someNumber = 123;
 console.log(someNumber.toUpperCase()); 
 
 // Error 15: 
-let greeting = Hello, world!;
+let greeting = (`Hello, world!`) ;
 
 // Error 16: 
-for (let i = 0; i < 5; i++); {
+for (let i = 0; i < 5; i++); 
     console.log(i);
-}
+
 
 // Error 17:
 let five = '5';
@@ -92,4 +95,4 @@ x = 5;
 let myString = 'Hello';
 myString.property = 'World';
 console.log(myString.property); 
-
+}
